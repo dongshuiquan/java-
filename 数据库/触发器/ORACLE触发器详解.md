@@ -2,39 +2,9 @@
 
  **原文链接：**<https://blog.csdn.net/IndexMan/article/details/8023740>
 
-**本篇主要内容如下：**
 
-8.1 触发器类型
 
-8.1.1 DML触发器
-
-8.1.2 替代触发器
-
-8.1.3 系统触发器
-
-8.2 创建触发器
-
-8.2.1 触发器触发次序
-
-8.2.2 创建DML触发器
-
-8.2.3 创建替代(INSTEAD OF)触发器
-
-8.2.4 创建系统事件触发器
-
-8.2.5 系统触发器事件属性
-
-8.2.6 使用触发器谓词
-
-8.2.7 重新编译触发器
-
-8.3 删除和使能触发器
-
-8.4 触发器和数据字典
-
-8.5   数据库触发器的应用举例
-
- 
+[TOC]
 
 ------
 
@@ -103,7 +73,7 @@ l         在触发器主体中调用的任何过程、函数，都不能使用�
 l         在触发器主体中不能申明任何Long和blob变量。新值new和旧值old也不能是表中的任何long和blob列。
 
 l         不同类型的触发器(如DML触发器、INSTEAD OF触发器、系统触发器)的语法格式和作用有较大区别。
- 
+
 
 # **8.2 创建触发器**
 
@@ -914,7 +884,7 @@ SELECT TRIGGER_NAME, TRIGGER_TYPE, TRIGGERING_EVENT,
 **例1：**创建一个DML语句级触发器，当对emp表执行INSERT, UPDATE, DELETE 操作时，它自动更新dept_summary 表中的数据。由于在PL/SQL块中不能直接调用DDL语句，所以，利用ORACLE内置包DBMS_UTILITY中的EXEC_DDL_STATEMENT过程，由它执行DDL语句创建触发器。
 
 
- 
+
 
 ```sql
 CREATE TABLE dept_summary(

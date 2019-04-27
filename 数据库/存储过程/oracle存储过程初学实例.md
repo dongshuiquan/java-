@@ -2,6 +2,8 @@
 
 原文链接：<https://blog.csdn.net/qq_37057095/article/details/76669489>
 
+[TOC]
+
 
 
 ## 认识存储过程和函数 
