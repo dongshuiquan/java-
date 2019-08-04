@@ -1,0 +1,10 @@
+
+
+java -Dc=my_core -Dauto=yes -Ddata=files -Drecursive=yes -jar example/exampledocs/post.jar example\exampledocs\*.xml
+
+
+java -Dc=my_core -Dauto=yes -Ddata=files -Drecursive=yes -jar example/exampledocs/post.jar example\exampledocs\books.json
+
+java -Dc=my_core -Dauto=yes -Ddata=files -Drecursive=yes -jar example/exampledocs/post.jar example\exampledocs\books.csv
+
+java -Dc=my_core -Ddata=args -jar example\exampledocs\post.jar "<delete><id>SP2514N</id></delete>"
